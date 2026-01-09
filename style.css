@@ -1,101 +1,152 @@
-/* --- CONTACT PAGE STYLES (Mars Style) --- */
+/* --- IMPROVED CONTACT PAGE STYLES (Dubai Edition) --- */
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop');
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.page-header h1 { font-size: 3rem; margin: 0; color: #fff; }
-.page-header p { color: var(--neon-cyan); margin-top: 10px; font-size: 1.2rem; }
+.page-header h1 { font-size: 3.5rem; margin: 0; color: #fff; letter-spacing: 2px; }
+.page-header p { color: var(--neon-cyan); margin-top: 10px; font-size: 1.2rem; font-weight: 300; }
 
-/* Split Layout */
+/* Split Layout - NOW CENTERED */
 .contact-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* <--- This forces centering */
+    align-items: flex-start;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 60px auto; /* Centers the whole block on page */
     padding: 0 20px;
-    gap: 40px;
+    gap: 50px;
 }
 
-/* Left Column: Info */
+/* Left Column: Info Cards */
 .contact-info-box {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
+    max-width: 450px;
 }
+
 .info-item {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    padding: 20px;
-    background: rgba(255,255,255,0.03); /* Subtle glass effect */
-    border-radius: 10px;
-    border-left: 3px solid var(--neon-gold);
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03); /* Subtle glass background */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+.info-item:hover {
+    transform: translateX(10px);
+    border-color: var(--neon-cyan);
+    background: rgba(0, 242, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 242, 255, 0.1);
 }
 .info-icon {
     font-size: 24px;
     color: var(--neon-cyan);
     margin-right: 20px;
-    margin-top: 5px;
+    background: rgba(0, 242, 255, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    min-width: 50px; /* Ensures circle shape */
+    text-align: center;
 }
-.info-content h3 { margin: 0 0 5px; color: #fff; }
-.info-content p, .info-content a { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; }
+.info-content h3 { margin: 0 0 5px; color: #fff; font-size: 1.1rem; letter-spacing: 0.5px; }
+.info-content p, .info-content a { color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin: 0; text-decoration: none; transition: 0.3s; }
 .info-content a:hover { color: var(--neon-gold); }
 
-/* Right Column: Form */
+/* Right Column: Premium Form (Glassmorphism) */
 .contact-form-box {
     flex: 1.5;
-    min-width: 300px;
-    background: #131c31;
-    padding: 40px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.05);
+    min-width: 320px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05); /* Frosted Glass Effect */
+    backdrop-filter: blur(12px);
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
-.form-group { margin-bottom: 20px; }
+
+.contact-form-box h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-group { margin-bottom: 25px; }
+
+/* Input Fields */
 .form-control {
     width: 100%;
-    padding: 15px;
-    background: #0f172a; /* Dark input bg */
-    border: 1px solid rgba(255,255,255,0.1);
+    padding: 18px 20px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     font-family: 'Outfit', sans-serif;
-    box-sizing: border-box; /* Fixes padding width issues */
+    font-size: 1rem;
+    box-sizing: border-box; /* Fixes padding issues */
+    transition: all 0.3s ease;
 }
+
+.form-control::placeholder { color: rgba(255, 255, 255, 0.3); }
+
+/* Glow Effect on Focus */
 .form-control:focus {
     outline: none;
+    background: rgba(15, 23, 42, 0.9);
     border-color: var(--neon-cyan);
-    box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+    transform: translateY(-2px);
 }
+
+/* Gold Gradient Submit Button */
 .submit-btn {
     width: 100%;
-    padding: 15px;
-    background: var(--neon-gold);
+    padding: 18px;
+    background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%); /* Gold Gradient */
     color: #000;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 1.5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
 }
-.submit-btn:hover { background: #e6c200; transform: translateY(-2px); }
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, #ffe033 0%, #d4a017 100%); /* Brighter on hover */
+}
 
 /* Map Section */
 .map-container {
     width: 100%;
-    height: 400px;
-    margin-top: 50px;
-    filter: grayscale(100%) invert(92%) contrast(83%); /* Makes map look "Dark Mode" */
+    height: 450px;
+    margin-top: 80px;
+    filter: grayscale(100%) invert(92%) contrast(83%); /* Dark Mode Map */
     border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Mobile Fix */
-@media (max-width: 768px) {
-    .contact-section { flex-direction: column; }
-    .contact-form-box { padding: 20px; }
+/* Mobile Responsiveness */
+@media (max-width: 850px) {
+    .contact-section { flex-direction: column; align-items: center; }
+    .contact-info-box, .contact-form-box { width: 100%; max-width: 100%; }
+    .contact-form-box { padding: 30px; }
+    .page-header h1 { font-size: 2.5rem; }
 }
