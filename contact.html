@@ -3,32 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact The Alef</title>
+    <title>Contact Us | The Alef</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <nav>
             <div class="logo">THE <span>ALEF</span></div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="index.html" class="nav-btn">Back</a>
+                <a href="index.html">Projects</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
             </div>
         </nav>
     </header>
 
-    <div class="container" style="text-align: center; padding-top: 100px;">
-        <h1 style="font-size: 3rem;">Get In Touch</h1>
-        <p style="color: var(--neon-cyan);">Start your investment journey in UAE.</p>
-        
-        <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; margin-top: 40px; border: 1px solid rgba(255,255,255,0.1);">
-            <p style="font-size: 1.5rem; color: #fff; margin-bottom: 20px;">
-                <i class="fas fa-phone"></i> <a href="tel:+971552590498" style="color: #fff;">+971 55 259 0498</a>
-            </p>
-            <p>Email: info@thealef.com</p>
-            <p>Address: 211, Fab Tower, Al Muroor Street, Abu Dhabi</p>
-        </div>
+    <div class="page-header">
+        <h1>Get in Touch</h1>
+        <p>Expert Real Estate Guidance in UAE</p>
     </div>
+
+    <div class="contact-section">
+        
+        <div class="contact-info-box">
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt info-icon"></i>
+                <div class="info-content">
+                    <h3>Headquarters</h3>
+                    <p>211, Fab Tower<br>Al Muroor Street<br>Abu Dhabi, UAE</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone-alt info-icon"></i>
+                <div class="info-content">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+971552590498">+971 55 259 0498</a></p>
+                    <p style="font-size: 0.8rem; opacity: 0.7;">Mon-Sat 9am to 6pm</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-envelope info-icon"></i>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@thealef.com">contact@thealef.com</a></p>
+                    <p><a href="mailto:info@thealef.com">info@thealef.com</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-form-box">
+            <h2 style="color: #fff; margin-bottom: 20px;">Send a Message</h2>
+            
+            <form action="mailto:info@thealef.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control" rows="5" placeholder="I am interested in..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Enquiry</button>
+            </form>
+        </div>
+
+    </div>
+
+    <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.6492334882575!2d54.3725!3d24.4635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e66601f076e03%3A0x6b0934c16503c23!2sFab%20Tower%2C%20Al%20Muroor%20St%2C%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae" allowfullscreen="" loading="lazy"></iframe>
+
+    <footer>
+        <p style="color: #94a3b8;">&copy; 2026 The Alef. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
