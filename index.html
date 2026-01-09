@@ -1,48 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dream Homes Real Estate</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Alef | Premium Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <h1>Dream Homes Real Estate</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
+            <div class="logo">THE <span>ALEF</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Projects</a>
+                <a href="contact.html" class="nav-btn">Contact Us</a>
+            </div>
         </nav>
     </header>
 
     <div class="hero">
-        <h2>Find Your Perfect Home in Hyderabad</h2>
-        <p>Luxury apartments and open plots available now.</p>
-        <a href="contact.html" class="btn">View Listings</a>
+        <h1>Experience Luxury Living</h1>
+        <p>Premium Open Plots & Villas in Hyderabad's Prime Locations</p>
+        <a href="contact.html" class="cta-btn">View Properties</a>
+    </div>
+
+    <div class="container" style="display: flex; justify-content: space-around; padding: 40px 0; text-align: center;">
+        <div>
+            <h2 style="color: var(--gold);">10+</h2>
+            <p>Years Experience</p>
+        </div>
+        <div>
+            <h2 style="color: var(--gold);">50+</h2>
+            <p>Completed Projects</p>
+        </div>
+        <div>
+            <h2 style="color: var(--gold);">2000+</h2>
+            <p>Happy Clients</p>
+        </div>
     </div>
 
     <div class="container">
-        <h3>Featured Properties</h3>
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <div class="line"></div>
+        </div>
+
         <div class="property-grid">
-            <div class="property-card">
-                <h4>Luxury Villa - Jubilee Hills</h4>
-                <p>4 Beds | 5 Baths</p>
-                <p><strong>₹ 5.5 Cr</strong></p>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Villa">
+                <div class="card-content">
+                    <h3>Alef Heights - Jubilee Hills</h3>
+                    <span class="price">₹ 4.5 Cr Onwards</span>
+                    <p>Luxury 4BHK Villas with private pool and garden.</p>
+                    <div class="details">
+                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                        <span><i class="fas fa-vector-square"></i> 3500 Sqft</span>
+                    </div>
+                </div>
             </div>
-            <div class="property-card">
-                <h4>Open Plot - Shadnagar</h4>
-                <p>200 Sq Yards</p>
-                <p><strong>₹ 15 Lakhs</strong></p>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt="Land">
+                <div class="card-content">
+                    <h3>Green Valley - Shadnagar</h3>
+                    <span class="price">₹ 12,000 / Sq Yard</span>
+                    <p>DTCP Approved open plots near highway exit.</p>
+                    <div class="details">
+                        <span><i class="fas fa-map-marker-alt"></i> Shadnagar</span>
+                        <span><i class="fas fa-check-circle"></i> Ready to Construct</span>
+                    </div>
+                </div>
             </div>
-            <div class="property-card">
-                <h4>Apartment - Gachibowli</h4>
-                <p>3 BHK | High Rise</p>
-                <p><strong>₹ 1.2 Cr</strong></p>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Apartment">
+                <div class="card-content">
+                    <h3>Skyline Towers - Gachibowli</h3>
+                    <span class="price">₹ 1.2 Cr Onwards</span>
+                    <p>Premium 3BHK high-rise apartments.</p>
+                    <div class="details">
+                        <span><i class="fas fa-building"></i> 3 BHK</span>
+                        <span><i class="fas fa-swimmer"></i> Clubhouse</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <a href="https://wa.me/918125062667" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
-        <p>&copy; 2026 Dream Homes Real Estate</p>
+        <h3>THE ALEF REAL ESTATE</h3>
+        <p>Your trusted partner in property investment.</p>
+        <br>
+        <p>Call: +91 81250 62667</p>
+        <div class="socials" style="margin-top: 20px;">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.7;">&copy; 2026 The Alef. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
